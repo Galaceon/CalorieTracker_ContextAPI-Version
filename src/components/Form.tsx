@@ -1,10 +1,9 @@
 import { useState } from "react"
-import { useEffect, type ChangeEvent, type Dispatch, type SubmitEvent } from "react"
+import { useEffect, type ChangeEvent, type SubmitEvent } from "react"
 import { v4 as uuidv4 } from "uuid"
 
 import type { Activity } from "../types"
 import { categories } from "../data/categories"
-import type { ActivityActions, ActivityState } from "../reducers/activity-reducer"
 import { useActivity } from "../hooks/useActivity"
 
 const initialState : Activity = { // State principal del formulario
